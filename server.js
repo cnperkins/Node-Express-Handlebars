@@ -2,7 +2,7 @@ var express = require("express");
 var exphbs = require("express-handlebars");
 var app = express();
 var PORT = process.env.PORT || 8080;
-var connection = require("./db/connection.js");
+var connection = require("./config/connection.js");
 // Sets up the Express app to handle data parsing
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
